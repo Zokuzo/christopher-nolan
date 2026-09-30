@@ -1,0 +1,14 @@
+{
+  "name": "christopher-nolan",
+  "owner": { "name": "Zokuzo", "url": "https://github.com/Zokuzo" },
+  "description": "Agent-driven Remotion video studio",
+  "plugins": [
+    {
+      "name": "christopher-nolan",
+      "source": "./",
+      "description": "Scenario grill -> Remotion Studio preview -> render, with free music and SFX",
+      "category": "media",
+      "tags": ["video", "remotion"]
+    }
+  ]
+}

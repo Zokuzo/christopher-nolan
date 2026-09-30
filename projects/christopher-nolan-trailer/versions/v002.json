@@ -1,0 +1,190 @@
+{
+  "_snapshot": {
+    "version": 2,
+    "note": "render",
+    "at": "2026-09-30T09:23:50.367Z"
+  },
+  "slug": "christopher-nolan-trailer",
+  "title": "Christopher Nolan — Trailer",
+  "format": "16:9",
+  "fps": 30,
+  "theme": {
+    "preset": "interstellar",
+    "energy": "calm"
+  },
+  "transition": {
+    "type": "fade",
+    "frames": 20
+  },
+  "audio": {
+    "music": {
+      "enabled": true,
+      "src": "projects/christopher-nolan-trailer/audio/music.mp3",
+      "volume": 0.5,
+      "duckTo": 0.2,
+      "mood": [
+        "cinematic",
+        "ambient",
+        "pulsing synth"
+      ],
+      "bpm": [
+        90,
+        110
+      ]
+    },
+    "sfx": {
+      "enabled": true,
+      "auto": true,
+      "volume": 0.45
+    },
+    "voice": {
+      "enabled": false,
+      "volume": 1
+    }
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "kinetic",
+      "seconds": 4,
+      "text": "Every great repo deserves a trailer."
+    },
+    {
+      "id": "title",
+      "type": "title",
+      "seconds": 4,
+      "title": "Christopher Nolan",
+      "subtitle": "The video studio your coding agent directs"
+    },
+    {
+      "id": "problem",
+      "type": "bullets",
+      "seconds": 7.5,
+      "title": "The old way",
+      "bullets": [
+        "Hours lost in a timeline",
+        "Music with murky licenses",
+        "Re-render for every typo",
+        "Stale by the next release"
+      ]
+    },
+    {
+      "id": "reveal",
+      "type": "kinetic",
+      "seconds": 3.5,
+      "sfx": [
+        {
+          "name": "whip",
+          "at": 0.1,
+          "volume": 0.4
+        }
+      ],
+      "text": "Now you just talk to your agent."
+    },
+    {
+      "id": "flow",
+      "type": "diagram",
+      "seconds": 6.5,
+      "title": "From idea to render",
+      "nodes": [
+        {
+          "id": "idea",
+          "label": "Idea",
+          "col": 0,
+          "row": 0
+        },
+        {
+          "id": "grill",
+          "label": "Grill",
+          "col": 1,
+          "row": 0
+        },
+        {
+          "id": "studio",
+          "label": "Studio",
+          "col": 2,
+          "row": 0
+        },
+        {
+          "id": "render",
+          "label": "Render",
+          "col": 3,
+          "row": 0
+        }
+      ],
+      "edges": [
+        {
+          "from": "idea",
+          "to": "grill",
+          "label": "repo scan"
+        },
+        {
+          "from": "grill",
+          "to": "studio",
+          "label": "scenario"
+        },
+        {
+          "from": "studio",
+          "to": "render",
+          "label": "approve"
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "type": "code",
+      "seconds": 7.5,
+      "title": "One schema. Agent, Studio and CLI agree.",
+      "code": "// Drop derived `_*` props before validating/persisting.\nexport const stripDerived = (data: unknown): unknown =>\n  data && typeof data === 'object' && !Array.isArray(data)\n    ? Object.fromEntries(\n        Object.entries(data).filter(([k]) => !k.startsWith('_')))\n    : data;\n\nexport const validateScenario = (data: unknown) => {\n  const r = ScenarioSchema.safeParse(stripDerived(data));\n  return r.success\n    ? { ok: true, scenario: r.data }\n    : { ok: false, error: z.prettifyError(r.error) };\n};",
+      "lang": "ts",
+      "filename": "cli/lib/scenario.ts",
+      "highlight": "9-12",
+      "typing": false
+    },
+    {
+      "id": "install",
+      "type": "terminal",
+      "seconds": 6,
+      "title": "Works in any agent",
+      "commands": [
+        {
+          "cmd": "npx skills add Zokuzo/christopher-nolan",
+          "output": "✓ nolan skill installed"
+        },
+        {
+          "cmd": "node cli/nolan.ts status",
+          "output": "christopher-nolan-trailer  preview\nnext: nolan studio christopher-nolan-trailer"
+        }
+      ]
+    },
+    {
+      "id": "stats",
+      "type": "stats",
+      "seconds": 5,
+      "transition": "filmBurn",
+      "title": "Batteries included, no key needed",
+      "stats": [
+        {
+          "label": "scene types",
+          "value": 12
+        },
+        {
+          "label": "theme presets",
+          "value": 6
+        },
+        {
+          "label": "CLI commands",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "id": "outro",
+      "type": "outro",
+      "seconds": 7,
+      "title": "Christopher Nolan",
+      "cta": "Direct your first video tonight.",
+      "url": "github.com/Zokuzo/christopher-nolan"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "click": "sfx/click.wav",
+  "ding": "sfx/ding.mp3",
+  "impact": "sfx/impact.mp3",
+  "page-turn": "sfx/page-turn.wav",
+  "pop": "sfx/pop.mp3",
+  "riser": "sfx/riser.mp3",
+  "shutter": "sfx/shutter.wav",
+  "switch": "sfx/switch.wav",
+  "whip": "sfx/whip.wav",
+  "whoosh": "sfx/whoosh.wav"
+}

@@ -1,0 +1,18 @@
+node_modules/
+out/
+.cache/
+.env
+projects/*
+!projects/christopher-nolan-trailer/
+projects/*/renders/
+projects/*/stills/
+projects/*/.studio.pid
+public/projects/*
+!public/projects/christopher-nolan-trailer/
+public/projects/christopher-nolan-trailer/*
+!public/projects/christopher-nolan-trailer/assets.lock.json
+# demo music: CC BY 3.0, redistributable with the credit already in assets.lock.json
+!public/projects/christopher-nolan-trailer/audio/
+projects/*/.studio-base.json
+projects/*/studio.log
+src/.nolan-render-*.tsx

@@ -1,0 +1,44 @@
+{
+  "name": "christopher-nolan",
+  "version": "0.1.0",
+  "description": "Agent-driven video studio on top of Remotion: brief, grill, scenario, Studio preview, render.",
+  "private": true,
+  "license": "MIT",
+  "author": "Zokuzo",
+  "homepage": "https://github.com/Zokuzo/christopher-nolan",
+  "repository": "github:Zokuzo/christopher-nolan",
+  "bugs": "https://github.com/Zokuzo/christopher-nolan/issues",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "nolan": "node cli/nolan.ts",
+    "test": "node --test \"cli/test/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.530",
+    "@remotion/google-fonts": "4.0.530",
+    "@remotion/layout-utils": "4.0.530",
+    "@remotion/media": "4.0.530",
+    "@remotion/noise": "4.0.530",
+    "@remotion/paths": "4.0.530",
+    "@remotion/renderer": "4.0.530",
+    "@remotion/sfx": "4.0.530",
+    "@remotion/studio": "4.0.530",
+    "@remotion/transitions": "4.0.530",
+    "@remotion/zod-types": "4.0.530",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.530",
+    "shiki": "4.4.3",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.0",
+    "@types/react": "19.2.7",
+    "typescript": "5.9.3"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "christopher-nolan",
+  "version": "0.1.0",
+  "description": "Agent-driven Remotion video studio: brief, grill, scenario, free music and SFX, Studio preview, render.",
+  "author": { "name": "Zokuzo", "url": "https://github.com/Zokuzo" },
+  "homepage": "https://github.com/Zokuzo/christopher-nolan",
+  "repository": "https://github.com/Zokuzo/christopher-nolan",
+  "license": "MIT",
+  "keywords": ["video", "remotion", "trailer", "demo-video", "presentation"],
+  "skills": ["./skills/"]
+}

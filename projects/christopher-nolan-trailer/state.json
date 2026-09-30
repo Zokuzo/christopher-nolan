@@ -1,0 +1,66 @@
+{
+  "slug": "christopher-nolan-trailer",
+  "stage": "approved",
+  "createdAt": "2026-09-30T09:00:00.000Z",
+  "updatedAt": "2026-09-30T10:08:08.141Z",
+  "repo": ".",
+  "version": 2,
+  "history": [
+    {
+      "at": "2026-09-30T09:00:00.000Z",
+      "stage": "brief",
+      "note": "created"
+    },
+    {
+      "at": "2026-09-30T09:05:00.000Z",
+      "stage": "scan"
+    },
+    {
+      "at": "2026-09-30T09:10:00.000Z",
+      "stage": "grill"
+    },
+    {
+      "at": "2026-09-30T09:40:00.000Z",
+      "stage": "inspiration",
+      "note": "skipped: preset chosen in grill"
+    },
+    {
+      "at": "2026-09-30T09:41:00.000Z",
+      "stage": "scenario"
+    },
+    {
+      "at": "2026-09-30T10:10:00.000Z",
+      "stage": "assets",
+      "note": "scenario validated; run nolan audio all"
+    },
+    {
+      "at": "2026-09-30T09:22:25.541Z",
+      "stage": "preview"
+    },
+    {
+      "at": "2026-09-30T09:29:37.504Z",
+      "stage": "approved",
+      "note": "approved v002"
+    },
+    {
+      "at": "2026-09-30T09:29:37.750Z",
+      "stage": "scenario",
+      "note": "reopened"
+    },
+    {
+      "at": "2026-09-30T09:29:37.980Z",
+      "stage": "approved",
+      "note": "approved v002"
+    },
+    {
+      "at": "2026-09-30T10:08:08.141Z",
+      "stage": "approved",
+      "note": "approved v002"
+    }
+  ],
+  "approved": {
+    "version": 2,
+    "file": "projects/christopher-nolan-trailer/renders/christopher-nolan-trailer-v002.mp4",
+    "at": "2026-09-30T10:08:08.141Z"
+  }
+}
